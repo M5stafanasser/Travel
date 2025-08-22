@@ -244,7 +244,7 @@ ul.navbar {
 
 @media (max-width: 800px) {
   #darkbtn {
-    left: 93%;
+    left: 87%;
   }
   .title {
     display: flex;
@@ -304,11 +304,18 @@ ul.navbar {
   }
 }
 @media (max-width: 500px) {
+    #darkbtn {
+    left: 80%;
+  }
   .list {
     padding: 0.1rem;
     margin: 0.3rem;
   }
-
+    #imaget {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-top: 3rem;
+  }
   .bigwelcome {
     max-width: 10rem;
   }
