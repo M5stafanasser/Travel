@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICLUB Project</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="images/images.png" alt="profile photo" class="photo" />
+        <div class="input">
+          <form action="#" method="post">
+            <label for="email" class="lab">Email:</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Email"
+            />
+          <br />
+            <label for="pass" class="lab">Password:</label><br />
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              required
+              placeholder="Password"
+              
+            />
+            <br /><br />
+            <button class="btn" id="log">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      var btn = document.getElementById("log");
+
+      function submit() {
+        var in1 = document.getElementById("email").value;
+        var in2 = document.getElementById("pass").value;
+        if (in1 != "" && in2 != "") {
+          console.log("i entered");
+          alert("Log in Successfully !");
+          return;
+        }
+      }
+      btn.addEventListener("click", submit);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up.css">
+    <title>Sign Up</title>
+    
+</head>
+<body>
+    
+ <div class="sign_up">
+    <h1>Create Account</h1>  
+     
+   <form method="post">
+      <div class="input_box">
+
+        <label for="fullname"></label>
+        <input type="text" name="fullname" id="fullname" placeholder="  👤 Full Name" required >
+         
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="  ✉ Email " required>
+
+        <label for="tel"></label>
+        <input type="tel" name="tel" id="tel" placeholder="  📞 Phone Number" required>
+
+        <label for="pass"></label>
+        <input type="password" name="pass" id="pass" placeholder="  🔒 Password" required>
+
+        <label for="pas"></label>
+        <input type="password" name="pas" id="pas" placeholder="  🔒 Confirm Password" required>
+     
+      </div>
+       <button type="submit" class="btn" id="sign">Sign Up</button>
+    </form>
+ </div>
+
+ <script>
+    var log = document.getElementById("sign") ;
+
+    function sign(){
+        var inp1 = document.getElementById("fullname").value ;
+        var inp2 = document.getElementById("email").value ;
+        var inp3 = document.getElementById("tel").value ;
+        var inp4 = document.getElementById("pass").value ;
+        var inp5 = document.getElementById("pas").value ;
+
+        if(inp1 !="" && inp2 !="" && inp3 !=""&& inp4 !="" && inp5 !="")
+        {
+            if(inp4 === inp5){
+                alert("✅ Sign up Successfully!");
+            } else {
+                alert("❌ Passwords do not match!");
+            }
+             }
+        }
+        log.addEventListener("click",sign) ;
+ </script>
+
+</body>
+</html>
