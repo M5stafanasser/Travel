@@ -245,7 +245,7 @@ ul.navbar {
 
 @media (max-width: 800px) {
   #darkbtn {
-    left: 90%;
+    left: 87%;
   }
   .title {
     display: flex;
@@ -306,7 +306,7 @@ ul.navbar {
 }
 @media (max-width: 500px) {
     #darkbtn {
-    left: 80%;
+    left: 90%;
   }
   .list {
     padding: 0.1rem;
