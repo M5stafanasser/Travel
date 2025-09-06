@@ -34,6 +34,7 @@ body::after {
   text-align: center;
   border-radius: 100%;
   position: fixed;
+  z-index: 5;
   left: 96%;
 }
 .darktheme #darkbtn{
@@ -244,7 +245,7 @@ ul.navbar {
 
 @media (max-width: 800px) {
   #darkbtn {
-    left: 87%;
+    left: 90%;
   }
   .title {
     display: flex;
